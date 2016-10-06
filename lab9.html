@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 9</title>
+        <meta charset="UTF-8">
+        <script src="lab9.js" defer></script>
+    </head>
+    <body>
+        <h1>Bubble Tea Ordering</h1>
+        <label>Tea </label>
+        <select id="teaSelection">
+            <option value="black">Black</option>
+            <option value="green">Green</option>
+            <option value="red">Red</option>
+        </select>
+        <br/>
+        <label>Toppings </label>
+        <select id="toppingsSelection">
+            <option value="Grass Jelly">Grass Jelly</option>
+            <option value="Coconut">Coconut</option>
+            <option value="Pearls">Pearls</option>
+            <option value="Mango Stars">Mango Stars</option>
+        </select>
+        <br/>
+        <input type="button" id="addTopping" value="Add Topping" onclick="addTopping()">
+        <input type="button" id="removeTopping" value="Remove Topping" onclick="removeTopping()">
+        <div>Current Toppings</div>
+        <ul id="list"></ul>
+        <br>
+        <label>Milk </label>
+        <select id="milkSelection">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        <br>
+        <h1>Your Order</h1>
+        <input type="button" id="addDrink" value="Add Drink" onclick="newTea()">
+        <input type="button" id="remove" value="Remove" onclick="removeTea()">
+        <input type="button" id="reset" value="Reset" onclick="reset()">
+        <br>
+        <table id="order"></table>
+    </body>
+</html>
